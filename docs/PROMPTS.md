@@ -32,7 +32,7 @@ In a **fresh** session, so the checker didn't write the stories.
 ## 4. Run a loop
 One loop per feature, each on its own branch. Only run loops in parallel if their zones don't overlap (see `PLAN.md` → "Can run in parallel").
 
-**Option A — the official plugin (easiest; works in the desktop app and cloud sessions).** Install the `ralph-wiggum` plugin once (type `/plugin` in Claude Code to browse and install), then start a session and type:
+**Option A — the official plugin (easiest; works in the desktop app and cloud sessions).** Install the `ralph-loop` plugin once (type `/plugin` in Claude Code to browse and install; older listings call it `ralph-wiggum`), then start a session and type:
 
 ```
 /ralph-loop "Follow ralph/PROMPT_build.md exactly. Task file: ralph/tasks/F1-csv-upload.json" --completion-promise "RALPH_COMPLETE" --max-iterations 15
