@@ -23,6 +23,7 @@ All prompts are in `docs/PROMPTS.md`.
 | `docs/ARCHITECTURE.md` | Bird's-eye view + work zones for parallel loops | Interactive sessions |
 | `docs/DECISIONS.md` | Why things are the way they are | Interactive sessions |
 | `docs/PROMPTS.md` | Copy-paste prompts for every step | You |
+| `docs/MIGRATION.md` | How to move an existing, unfinished project onto this workflow (template only) | — |
 | `PLAN.md` | Roadmap: features, status, what can run in parallel | Interactive sessions |
 | `ralph/PROMPT_plan.md` | Instructions that turn the spec into task files | — |
 | `ralph/PROMPT_build.md` | Instructions for each loop round | — |
@@ -44,6 +45,9 @@ Each feature has its own task file and progress log, so parallel loops never edi
 2. Settings → General → tick **Template repository**.
 3. In each new project made from it: Settings → Branches → add a **branch protection rule for `main`** requiring a pull request before merging. This is your main safety net — loops can do anything on their own branches, but only you merge.
 4. If you'll use the loop script, make it runnable once: ask Claude Code to run `chmod +x ralph/ralph.sh` (or run it as `bash ralph/ralph.sh …`).
+
+## Adding this workflow to an existing project
+Don't copy the template over a project that already has filled-in documents — the blank files would replace yours. Follow `docs/MIGRATION.md` instead.
 
 ## Safety checklist for loops
 - Always set a round limit.
